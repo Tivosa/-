@@ -60,9 +60,9 @@ void loop() {
   // Compute heat index in Celsius (isFahreheit = false)
   float hic = dht.computeHeatIndex(t, h, false);
 digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(30000/t);                       // 
+  delay(1500-t*100);                       // 
   digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
-  delay(30000/t);                       // 
+  delay(1500-t*100);                       // 
 
   
   Serial.print(("Group 7 "));
